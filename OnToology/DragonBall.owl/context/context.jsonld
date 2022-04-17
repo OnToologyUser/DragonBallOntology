@@ -1,0 +1,108 @@
+{
+  "@context" : {
+    "Objects" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Objects"
+    },
+    "Saiyan" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Saiyan"
+    },
+    "Hell" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Hell"
+    },
+    "Races" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Races"
+    },
+    "hasObject" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#hasObject",
+      "@type" : "@id"
+    },
+    "hasDragonBalls" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#hasDragonBalls",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Android" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Android"
+    },
+    "Human" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Human"
+    },
+    "Genkidama" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Genkidama"
+    },
+    "GarlickCannon" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#GarlickCannon"
+    },
+    "DragonRadar" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#DragonRadar"
+    },
+    "Scouter" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Scouter"
+    },
+    "TimeMachine" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#TimeMachine"
+    },
+    "DragonBalls" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#DragonBalls"
+    },
+    "Locations" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Locations"
+    },
+    "Techniques" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Techniques"
+    },
+    "Angel" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Angel"
+    },
+    "Earth" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Earth"
+    },
+    "KingKaiPlanet" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#KingKaiPlanet"
+    },
+    "Namek" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Namek"
+    },
+    "hasDie" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#hasDie",
+      "@type" : "@id"
+    },
+    "Kamehameha" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Kamehameha"
+    },
+    "Namekian" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Namekian"
+    },
+    "hasTechniques" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#hasTechniques",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "PlanetVegeta" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#PlanetVegeta"
+    },
+    "KintonCloud" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#KintonCloud"
+    },
+    "Ozaru" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Ozaru"
+    },
+    "hasOzaru" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#hasOzaru",
+      "@type" : "@id"
+    },
+    "FinalFlash" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#FinalFlash"
+    },
+    "OtherWorld" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#OtherWorld"
+    },
+    "Heaven" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Heaven"
+    }
+  }
+}

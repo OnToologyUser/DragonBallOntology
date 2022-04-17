@@ -1,0 +1,397 @@
+@prefix : <http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#> .
+
+<http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall> rdf:type owl:Ontology ;
+                                                                 rdfs:comment """Ontology about TV serie Dragon Ball
+Author: Roberto Fuente Cebrián""" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schema#sameAs
+rdfs:sameAs rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#hasDie
+:hasDie rdf:type owl:ObjectProperty ;
+        rdfs:domain :Races ;
+        rdfs:range :OtherWorld ;
+        rdfs:comment "A person has died" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#hasObject
+:hasObject rdf:type owl:ObjectProperty ;
+           rdfs:domain :Races ;
+           rdfs:range :Objects ;
+           rdfs:comment "A person can have multiple objects" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#hasOzaru
+:hasOzaru rdf:type owl:ObjectProperty ;
+          rdfs:domain :Saiyan ;
+          rdfs:range :Ozaru ;
+          rdfs:comment "A Saiyan has Ozaru power" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#hasDragonBalls
+:hasDragonBalls rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Races ;
+                rdfs:range xsd:integer ;
+                rdfs:comment "Number of dragon balls that a person has" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#hasTechniques
+:hasTechniques rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Races ;
+               rdfs:range xsd:integer ;
+               rdfs:comment "Number of techniques that a person has" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Android
+:Android rdf:type owl:Class ;
+         rdfs:subClassOf :Races ;
+         rdfs:comment "Androids and artificial intelligences" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Angel
+:Angel rdf:type owl:Class ;
+       rdfs:subClassOf :Races ;
+       rdfs:comment "Divine beings of the multiverse" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#DragonBalls
+:DragonBalls rdf:type owl:Class ;
+             rdfs:subClassOf :Objects ;
+             rdfs:comment "Seven magic balls that if they come together they grant you a wish" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#DragonRadar
+:DragonRadar rdf:type owl:Class ;
+             rdfs:subClassOf :Objects ;
+             rdfs:comment "Device that can locate dragon balls" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Earth
+:Earth rdf:type owl:Class ;
+       rdfs:subClassOf :Locations ;
+       rdfs:comment "Planet Earth" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#FinalFlash
+:FinalFlash rdf:type owl:Class ;
+            rdfs:subClassOf :Techniques ;
+            rdfs:comment "Powerful attack that also blinds the enemy" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#GarlickCannon
+:GarlickCannon rdf:type owl:Class ;
+               rdfs:subClassOf :Techniques ;
+               rdfs:comment "Garlick Cannon attack" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Genkidama
+:Genkidama rdf:type owl:Class ;
+           rdfs:subClassOf :Techniques ;
+           rdfs:comment "Big ball of energy attack" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Heaven
+:Heaven rdf:type owl:Class ;
+        rdfs:subClassOf :OtherWorld ;
+        rdfs:comment "Heaven" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Hell
+:Hell rdf:type owl:Class ;
+      rdfs:subClassOf :OtherWorld ;
+      rdfs:comment "Hell" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Human
+:Human rdf:type owl:Class ;
+       rdfs:subClassOf :Races ;
+       rdfs:comment "People from Planet Earth" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Kamehameha
+:Kamehameha rdf:type owl:Class ;
+            rdfs:subClassOf :Techniques ;
+            rdfs:comment "Most used attack taught by master turtle" ;
+            rdfs:sameAs "http://dbpedia.org/resource/Kamehameha_dragon_ball" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#KingKaiPlanet
+:KingKaiPlanet rdf:type owl:Class ;
+               rdfs:subClassOf :OtherWorld ;
+               rdfs:comment "Planet of King Kai" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#KintonCloud
+:KintonCloud rdf:type owl:Class ;
+             rdfs:subClassOf :Objects ;
+             rdfs:comment "Magical cloud that serves as a flying transport" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Locations
+:Locations rdf:type owl:Class ;
+           rdfs:comment "Places where people can go" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Namek
+:Namek rdf:type owl:Class ;
+       rdfs:subClassOf :Locations ;
+       rdfs:comment "Planet Namek" ;
+       rdfs:sameAs "http://dbpedia.org/resource/The_Namek" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Namekian
+:Namekian rdf:type owl:Class ;
+          rdfs:subClassOf :Races ;
+          rdfs:comment "People from planet Namek" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Objects
+:Objects rdf:type owl:Class ;
+         rdfs:comment "Different and unique objects from the serie" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#OtherWorld
+:OtherWorld rdf:type owl:Class ;
+            owl:equivalentClass [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasDie ;
+                                  owl:allValuesFrom [ rdf:type owl:Class ;
+                                                      owl:unionOf ( :Human
+                                                                    :Namekian
+                                                                    :Saiyan
+                                                                  )
+                                                    ]
+                                ] ;
+            rdfs:subClassOf :Locations ;
+            rdfs:comment "Place where people go when they die" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Ozaru
+:Ozaru rdf:type owl:Class ;
+       rdfs:subClassOf :Techniques ;
+       rdfs:comment "Giant gorilla transformation" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#PlanetVegeta
+:PlanetVegeta rdf:type owl:Class ;
+              rdfs:subClassOf :Locations ;
+              rdfs:comment "Planet Vegeta" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Races
+:Races rdf:type owl:Class ;
+       owl:equivalentClass [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasDragonBalls ;
+                             owl:maxQualifiedCardinality "7"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange xsd:integer
+                           ] ;
+       rdfs:comment "Different type of races in the universe" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Saiyan
+:Saiyan rdf:type owl:Class ;
+        rdfs:subClassOf :Races ;
+        rdfs:comment "Race of strong warriors from planet Vegeta" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Scouter
+:Scouter rdf:type owl:Class ;
+         rdfs:subClassOf :Objects ;
+         rdfs:comment "Device to measure someone's strengths and locate them" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Techniques
+:Techniques rdf:type owl:Class ;
+            rdfs:comment "Techniques and attacks" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#TimeMachine
+:TimeMachine rdf:type owl:Class ;
+             rdfs:subClassOf :Objects ;
+             rdfs:comment "A machine that allows to travel through time" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Bulma
+:Bulma rdf:type owl:NamedIndividual ,
+                :Human ;
+       :hasDragonBalls 2 .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Goku
+:Goku rdf:type owl:NamedIndividual ,
+               :Saiyan ;
+      :hasDie :SnakePath ;
+      :hasObject :VegetaScouter ;
+      :hasOzaru :Ozaru1 ;
+      :hasDragonBalls 5 ;
+      :hasTechniques 4 ;
+      rdfs:sameAs "https://dbpedia.org/page/Goku" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Kaio
+:Kaio rdf:type owl:NamedIndividual ;
+      :hasTechniques 4 .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Ozaru1
+:Ozaru1 rdf:type owl:NamedIndividual ,
+                 :Ozaru .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Piccolo
+:Piccolo rdf:type owl:NamedIndividual ,
+                  :Namekian ;
+         rdfs:sameAs "https://dbpedia.org/page/Piccolo_(Dragon_Ball)" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#SnakePath
+:SnakePath rdf:type owl:NamedIndividual ,
+                    :Heaven .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#SuperKamehameha
+:SuperKamehameha rdf:type owl:NamedIndividual ,
+                          :Kamehameha .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#VegetaScouter
+:VegetaScouter rdf:type owl:NamedIndividual ,
+                        :Scouter .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Heaven
+                :Hell
+                :KingKaiPlanet
+              )
+] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<urn:swrl:var#p> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#h> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Namekian ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Namek ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Races ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasDragonBalls ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#h>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl:var#h> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 4 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :DragonRadar ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Races ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasTechniques ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#h>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl:var#h> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 3 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Angel ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
