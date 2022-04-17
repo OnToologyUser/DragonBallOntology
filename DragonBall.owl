@@ -1,0 +1,654 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/rober/ontologies/2022/3/untitled-ontology-6#"
+     xml:base="http://www.semanticweb.org/rober/ontologies/2022/3/untitled-ontology-6"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:DragonBall="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall">
+        <rdfs:comment>Ontology about TV serie Dragon Ball
+Author: Roberto Fuente Cebrián</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#sameAs -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#sameAs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#hasDie -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#hasDie">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Races"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#OtherWorld"/>
+        <rdfs:comment>A person has died</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#hasObject -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#hasObject">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Races"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Objects"/>
+        <rdfs:comment>A person can have multiple objects</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#hasOzaru -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#hasOzaru">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Saiyan"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Ozaru"/>
+        <rdfs:comment>A Saiyan has Ozaru power</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#hasDragonBalls -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#hasDragonBalls">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Races"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Number of dragon balls that a person has</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#hasTechniques -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#hasTechniques">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Races"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Number of techniques that a person has</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Android -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Android">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Races"/>
+        <rdfs:comment>Androids and artificial intelligences</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Angel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Angel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Races"/>
+        <rdfs:comment>Divine beings of the multiverse</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#DragonBalls -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#DragonBalls">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Objects"/>
+        <rdfs:comment>Seven magic balls that if they come together they grant you a wish</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#DragonRadar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#DragonRadar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Objects"/>
+        <rdfs:comment>Device that can locate dragon balls</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Earth -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Earth">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Locations"/>
+        <rdfs:comment>Planet Earth</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#FinalFlash -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#FinalFlash">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Techniques"/>
+        <rdfs:comment>Powerful attack that also blinds the enemy</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#GarlickCannon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#GarlickCannon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Techniques"/>
+        <rdfs:comment>Garlick Cannon attack</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Genkidama -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Genkidama">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Techniques"/>
+        <rdfs:comment>Big ball of energy attack</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Heaven -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Heaven">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#OtherWorld"/>
+        <rdfs:comment>Heaven</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Hell -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Hell">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#OtherWorld"/>
+        <rdfs:comment>Hell</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Human -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Human">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Races"/>
+        <rdfs:comment>People from Planet Earth</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Kamehameha -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Kamehameha">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Techniques"/>
+        <rdfs:comment>Most used attack taught by master turtle</rdfs:comment>
+        <rdfs:sameAs>http://dbpedia.org/resource/Kamehameha_dragon_ball</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#KingKaiPlanet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#KingKaiPlanet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#OtherWorld"/>
+        <rdfs:comment>Planet of King Kai</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#KintonCloud -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#KintonCloud">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Objects"/>
+        <rdfs:comment>Magical cloud that serves as a flying transport</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Locations -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Locations">
+        <rdfs:comment>Places where people can go</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Namek -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Namek">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Locations"/>
+        <rdfs:comment>Planet Namek</rdfs:comment>
+        <rdfs:sameAs>http://dbpedia.org/resource/The_Namek</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Namekian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Namekian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Races"/>
+        <rdfs:comment>People from planet Namek</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Objects -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Objects">
+        <rdfs:comment>Different and unique objects from the serie</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#OtherWorld -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#OtherWorld">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#hasDie"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Human"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Namekian"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Saiyan"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Locations"/>
+        <rdfs:comment>Place where people go when they die</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Ozaru -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Ozaru">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Techniques"/>
+        <rdfs:comment>Giant gorilla transformation</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#PlanetVegeta -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#PlanetVegeta">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Locations"/>
+        <rdfs:comment>Planet Vegeta</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Races -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Races">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#hasDragonBalls"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">7</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:comment>Different type of races in the universe</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Saiyan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Saiyan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Races"/>
+        <rdfs:comment>Race of strong warriors from planet Vegeta</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Scouter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Scouter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Objects"/>
+        <rdfs:comment>Device to measure someone&apos;s strengths and locate them</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Techniques -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Techniques">
+        <rdfs:comment>Techniques and attacks</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#TimeMachine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#TimeMachine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Objects"/>
+        <rdfs:comment>A machine that allows to travel through time</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Bulma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Bulma">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Human"/>
+        <DragonBall:hasDragonBalls rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</DragonBall:hasDragonBalls>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Goku -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Goku">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Saiyan"/>
+        <DragonBall:hasDie rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#SnakePath"/>
+        <DragonBall:hasObject rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#VegetaScouter"/>
+        <DragonBall:hasOzaru rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Ozaru1"/>
+        <DragonBall:hasDragonBalls rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</DragonBall:hasDragonBalls>
+        <DragonBall:hasTechniques rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</DragonBall:hasTechniques>
+        <rdfs:sameAs>https://dbpedia.org/page/Goku</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Kaio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Kaio">
+        <DragonBall:hasTechniques rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</DragonBall:hasTechniques>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Ozaru1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Ozaru1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Ozaru"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Piccolo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Piccolo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Namekian"/>
+        <rdfs:sameAs>https://dbpedia.org/page/Piccolo_(Dragon_Ball)</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#SnakePath -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#SnakePath">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Heaven"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#SuperKamehameha -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#SuperKamehameha">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Kamehameha"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#VegetaScouter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#VegetaScouter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Scouter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Heaven"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Hell"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#KingKaiPlanet"/>
+        </owl:members>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="urn:swrl:var#p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#h">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Namekian"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Namek"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Races"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#hasDragonBalls"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#h"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#h"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#DragonRadar"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Races"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#hasTechniques"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#h"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#h"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Angel"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
