@@ -1,0 +1,588 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid2"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#hasDie"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid13"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid15"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Namekian"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Namek"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid24"
+    }, {
+      "@id" : "_:genid22"
+    }, {
+      "@id" : "_:genid18"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid26"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#h"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "4"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Human"
+    }, {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Namekian"
+    }, {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Saiyan"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#h"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#hasDragonBalls"
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Races"
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#DragonRadar"
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid35"
+    }, {
+      "@id" : "_:genid33"
+    }, {
+      "@id" : "_:genid29"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid37"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#h"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "3"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan"
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#h"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#hasTechniques"
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Races"
+  } ]
+}, {
+  "@id" : "_:genid37",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Angel"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "7"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#hasDragonBalls"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Heaven"
+    }, {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Hell"
+    }, {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#KingKaiPlanet"
+    } ]
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Ontology about TV serie Dragon Ball\nAuthor: Roberto Fuente Cebrián"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Android",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Androids and artificial intelligences"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Races"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Angel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Divine beings of the multiverse"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Races"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Bulma",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#hasDragonBalls" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Human"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#DragonBalls",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Seven magic balls that if they come together they grant you a wish"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Objects"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#DragonRadar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Device that can locate dragon balls"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Objects"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Earth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Planet Earth"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Locations"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#FinalFlash",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Powerful attack that also blinds the enemy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Techniques"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#GarlickCannon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Garlick Cannon attack"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Techniques"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Genkidama",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Big ball of energy attack"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Techniques"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Goku",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#hasDie" : [ {
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#SnakePath"
+  } ],
+  "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#hasDragonBalls" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "5"
+  } ],
+  "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#hasObject" : [ {
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#VegetaScouter"
+  } ],
+  "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#hasOzaru" : [ {
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Ozaru1"
+  } ],
+  "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#hasTechniques" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "4"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Saiyan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/Goku"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Heaven",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Heaven"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#OtherWorld"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Hell",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hell"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#OtherWorld"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Human",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "People from Planet Earth"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Races"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Kaio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#hasTechniques" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "4"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Kamehameha",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Most used attack taught by master turtle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "http://dbpedia.org/resource/Kamehameha_dragon_ball"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Techniques"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#KingKaiPlanet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Planet of King Kai"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#OtherWorld"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#KintonCloud",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Magical cloud that serves as a flying transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Objects"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Locations",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Places where people can go"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Namek",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Planet Namek"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "http://dbpedia.org/resource/The_Namek"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Locations"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Namekian",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "People from planet Namek"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Races"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Objects",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Different and unique objects from the serie"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#OtherWorld",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Place where people go when they die"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Locations"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Ozaru",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Giant gorilla transformation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Techniques"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Ozaru1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Ozaru"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Piccolo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Namekian"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/Piccolo_(Dragon_Ball)"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#PlanetVegeta",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Planet Vegeta"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Locations"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Races",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Different type of races in the universe"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid6"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Saiyan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Race of strong warriors from planet Vegeta"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Races"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Scouter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Device to measure someone's strengths and locate them"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Objects"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#SnakePath",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Heaven"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#SuperKamehameha",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Kamehameha"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Techniques",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Techniques and attacks"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#TimeMachine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A machine that allows to travel through time"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Objects"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#VegetaScouter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Scouter"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#hasDie",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A person has died"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Races"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#OtherWorld"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#hasDragonBalls",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Number of dragon balls that a person has"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Races"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#hasObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A person can have multiple objects"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Races"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Objects"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#hasOzaru",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Saiyan has Ozaru power"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Saiyan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Ozaru"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#hasTechniques",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Number of techniques that a person has"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/3/DragonBall#Races"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+}, {
+  "@id" : "urn:swrl:var#h",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "urn:swrl:var#p",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+} ]
